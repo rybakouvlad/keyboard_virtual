@@ -1,12 +1,16 @@
-{
-   
+{  
     "env": {
         "browser": true,
         "node": true,
         "es6": true
     },
-    // "no-use-before-define": ["error", { "functions": true, "classes": true }],
 
-    
+
+    "rules": {
+        "no-use-before-define": ["error", { "variables": false  }],
+        "no-param-reassign": 0
+        
+      },
+
     "extends": ["airbnb/base"]
 }
